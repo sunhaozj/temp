@@ -1,0 +1,10 @@
+<!--pages/share/share.wxml-->
+<view class="container">
+  <view class="usermotto">
+    <image src="{{shareImage}}" class="share-image"></image>
+    <canvasdrawer painting="{{painting}}" class="canvasdrawer" bind:getImage="eventGetImage"/>
+    <button class="weui-btn" type="primary" plain="true" bind:tap="eventDraw">绘制</button>
+    <button class="weui-btn" type="primary" plain="true" bind:tap="eventSave">保存到本地</button>
+    <button class="weui-btn" type="primary" plain="true" open-type="share">转发当前页</button>
+  </view>
+</view>
